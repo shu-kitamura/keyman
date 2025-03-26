@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+	"keyman-server",
+	"keyman-client",
+]

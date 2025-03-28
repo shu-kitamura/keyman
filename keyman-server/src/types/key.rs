@@ -14,7 +14,7 @@ impl Key {
             timestamp,
             is_deleted,
         }
-    } 
+    }
 }
 
 #[cfg(test)]
@@ -27,7 +27,7 @@ mod tests {
             row_key: "test_key".to_string(),
             column: "test_col".to_string(),
             timestamp: 1743077075,
-            is_deleted: false
+            is_deleted: false,
         };
         assert_eq!(key, Key::new("test_key", "test_col", 1743077075, false));
     }

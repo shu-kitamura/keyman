@@ -28,7 +28,7 @@ mod tests {
     #[test]
     fn test_new() {
         let val: Value = Value {
-            data: vec![116, 101, 116, 116]
+            data: vec![116, 101, 116, 116],
         };
         assert_eq!(val, Value::new(vec![116, 101, 116, 116]))
     }
@@ -36,7 +36,7 @@ mod tests {
     #[test]
     fn test_from() {
         let val: Value = Value {
-            data: vec![116, 101, 115, 116]
+            data: vec![116, 101, 115, 116],
         };
         assert_eq!(val, Value::from(&vec![116, 101, 115, 116][..]));
         assert_eq!(val, Value::from("test"));
